@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 
+#include "1TwoSum.hpp"
+
 using namespace std;
 
 int main() {
