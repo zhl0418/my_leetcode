@@ -8,10 +8,10 @@ target_sources(
         fraction.cpp
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/fraction.h
-    )
+)
 
 target_include_directories(
     example
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}
-    )
+)

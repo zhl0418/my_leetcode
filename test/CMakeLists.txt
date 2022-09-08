@@ -1,6 +1,6 @@
 add_executable(
     unit_test
-    test_fraction.cpp
+    test.cpp
     )
 
 target_link_libraries(
