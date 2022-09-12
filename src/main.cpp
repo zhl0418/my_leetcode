@@ -1,8 +1,7 @@
 #include <cstdlib>
 #include <iostream>
+#include <vector>
 #include <string>
-
-#include "1_TwoSum.hpp"
 
 using namespace std;
 
