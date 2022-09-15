@@ -27,12 +27,14 @@ TEST(RomanToInteger, test2) {
 }
 TEST(LongestCommonPrefix, test1) {
   Solution_14 solution;
-  auto result = solution.longestCommonPrefix(vector<string>{"flower", "flow", "flight"});
+  vector<string> str = {"flower", "flow", "flight"};
+  auto result = solution.longestCommonPrefix(str);
   EXPECT_FALSE(result.compare("fl"));
 }
 TEST(LongestCommonPrefix, test2) {
   Solution_14 solution;
-  auto result = solution.longestCommonPrefix2(vector<string>{"flower", "flow", "flight"});
+  vector<string> str = {"flower", "flow", "flight"};
+  auto result = solution.longestCommonPrefix2(str);
   EXPECT_FALSE(result.compare("fl"));
 }
 }  // namespace test_leetcode

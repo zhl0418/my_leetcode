@@ -19,7 +19,7 @@ class Solution_14 {
     }
     return pre;
   }
-  string commonPrefix(string &l, string& r) {
+  string commonPrefix(string& l, string& r) {
     auto len = min(l.size(), r.size());
     for (int i = 0; i < len; i++) {
       if (l[i] != r[i]) return l.substr(0, i);
