@@ -1,6 +1,7 @@
 #include "13_RomanToInteger.hpp"
 #include "14_LongestCommonPrefix.hpp"
 #include "9_PalindromeNumber.hpp"
+#include "20_ValidParentheses.hpp"
 #include "gtest/gtest.h"
 
 namespace test_leetcode {
@@ -36,5 +37,11 @@ TEST(LongestCommonPrefix, test2) {
   vector<string> str = {"flower", "flow", "flight"};
   auto result = solution.longestCommonPrefix2(str);
   EXPECT_FALSE(result.compare("fl"));
+}
+TEST(ValidParentheses, test1) {
+  Solution_20 solution;
+  string str = "()[]{}";
+  auto result = solution.isValid(str);
+  EXPECT_TRUE(result);
 }
 }  // namespace test_leetcode
