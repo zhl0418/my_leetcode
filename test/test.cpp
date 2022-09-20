@@ -1,4 +1,7 @@
-#include "9PalindromeNumber.hpp"
+#include "13_RomanToInteger.hpp"
+#include "14_LongestCommonPrefix.hpp"
+#include "9_PalindromeNumber.hpp"
+#include "20_ValidParentheses.hpp"
 #include "gtest/gtest.h"
 
 namespace test_leetcode {
@@ -12,5 +15,33 @@ TEST(isPalindrome, test2) {
   Solution solution;
   auto result = solution.isPalindrome(-121);
   EXPECT_EQ(result, false);
+}
+TEST(RomanToInteger, test1) {
+  Solution13 solution;
+  auto result = solution.romanToInt("MCMXCIV");
+  EXPECT_EQ(result, 1994);
+}
+TEST(RomanToInteger, test2) {
+  Solution13 solution;
+  auto result = solution.romanToInt("LVIII");
+  EXPECT_EQ(result, 58);
+}
+TEST(LongestCommonPrefix, test1) {
+  Solution_14 solution;
+  vector<string> str = {"flower", "flow", "flight"};
+  auto result = solution.longestCommonPrefix(str);
+  EXPECT_FALSE(result.compare("fl"));
+}
+TEST(LongestCommonPrefix, test2) {
+  Solution_14 solution;
+  vector<string> str = {"flower", "flow", "flight"};
+  auto result = solution.longestCommonPrefix2(str);
+  EXPECT_FALSE(result.compare("fl"));
+}
+TEST(ValidParentheses, test1) {
+  Solution_20 solution;
+  string str = "()[]{}";
+  auto result = solution.isValid(str);
+  EXPECT_TRUE(result);
 }
 }  // namespace test_leetcode

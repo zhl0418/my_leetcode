@@ -1,17 +1,15 @@
 #include <cstdlib>
 #include <iostream>
+#include <vector>
 #include <string>
-
-#include "1TwoSum.hpp"
 
 using namespace std;
 
 int main() {
   string input;
-
-  while (cin >> input) {
-    if (!input.compare("exit")) return (EXIT_SUCCESS);
-  }
+  //while (cin >> input) {
+  //  if (!input.compare("exit")) return (EXIT_SUCCESS);
+  //}
   cout << "Exit code" << endl;
   return (EXIT_FAILURE);
 }
