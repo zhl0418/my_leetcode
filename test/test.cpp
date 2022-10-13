@@ -1,7 +1,8 @@
 #include "13_RomanToInteger.hpp"
 #include "14_LongestCommonPrefix.hpp"
-#include "9_PalindromeNumber.hpp"
 #include "20_ValidParentheses.hpp"
+#include "35_SearchInsertPosition.hpp"
+#include "9_PalindromeNumber.hpp"
 #include "gtest/gtest.h"
 
 namespace test_leetcode {
@@ -43,5 +44,17 @@ TEST(ValidParentheses, test1) {
   string str = "()[]{}";
   auto result = solution.isValid(str);
   EXPECT_TRUE(result);
+}
+TEST(SearchInsertPosition, test1) {
+  Solution_35 solution;
+  vector<int> in{1, 3, 5, 6};
+  auto result = solution.searchInsert(in, 2);
+  EXPECT_EQ(result, 1);
+}
+TEST(SearchInsertPosition, test2) {
+  Solution_35 solution;
+  vector<int> in{1, 3};
+  auto result = solution.searchInsert(in, 2);
+  EXPECT_EQ(result, 1);
 }
 }  // namespace test_leetcode
