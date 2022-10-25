@@ -2,6 +2,7 @@
 #include "14_LongestCommonPrefix.hpp"
 #include "20_ValidParentheses.hpp"
 #include "35_SearchInsertPosition.hpp"
+#include "69_sqrt.hpp"
 #include "9_PalindromeNumber.hpp"
 #include "gtest/gtest.h"
 
@@ -56,5 +57,15 @@ TEST(SearchInsertPosition, test2) {
   vector<int> in{1, 3};
   auto result = solution.searchInsert(in, 2);
   EXPECT_EQ(result, 1);
+}
+TEST(Sqrt, test1) {
+  Solution_69 solution;
+  auto result = solution.mySqrt(8);
+  EXPECT_EQ(result, 2);
+}
+TEST(Sqrt, test2) {
+  Solution_69 solution;
+  auto result = solution.mySqrt(9);
+  EXPECT_EQ(result, 3);
 }
 }  // namespace test_leetcode
