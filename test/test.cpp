@@ -1,6 +1,7 @@
 #include "13_RomanToInteger.hpp"
 #include "14_LongestCommonPrefix.hpp"
 #include "20_ValidParentheses.hpp"
+#include "264_nthUglyNumber.hpp"
 #include "35_SearchInsertPosition.hpp"
 #include "69_sqrt.hpp"
 #include "9_PalindromeNumber.hpp"
@@ -67,5 +68,10 @@ TEST(Sqrt, test2) {
   Solution_69 solution;
   auto result = solution.mySqrt(9);
   EXPECT_EQ(result, 3);
+}
+TEST(Nr_264, test1) {
+  Solution_264 solution;
+  auto result = solution.nthUglyNumber(10);
+  EXPECT_EQ(result, 12);
 }
 }  // namespace test_leetcode
